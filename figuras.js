@@ -55,27 +55,70 @@ console.group("Círculos");
 // const radioCirculo = 4;
 // console.log("El radio del círculo es: " + radioCirculo + "cm");
 
-// Diámetro 
+  // Diámetro 
 function diametroCirculo(radio) {
   return radio * 2; 
 }
 
-// PI
+  // PI
 const PI = Math.PI;
-// console.log("PI es: " + PI);
 
 
-// Circunferencia
+
+  // Circunferencia
 function perimetroCirculo(radio) {
   const diametro = diametroCirculo(radio);
   return diametro * PI;
 }
 
-// Área
+  // Área
 function areaCirculo(radio) {
   return (radio * radio) * PI;
 }
-
-
-
 console.groupEnd();
+
+// Aquí interactuamos con el HTML
+// Cuadrado
+
+function calcularPerimetroCuadrado() {
+  document.getElementById("InputCuadrado");
+  const value = InputCuadrado.value;
+  
+  const perimetro = perimetroCuadrado(value);
+  alert(perimetro);
+}
+function calcularAreaCuadrado() {
+  document.getElementById("InputCuadrado");
+  const value = InputCuadrado.value;
+  
+  const area = areaCuadrado(value);
+  alert(area);
+}
+
+// // Triangulo
+// function calcularPerimetroTriangulo() {
+//   document.getElementById("InputLado1");
+//   const valueLado1 = InputLado1.value;
+//   document.getElementById("InputLado2");
+//   const valueLado2 = InputLado2 .value;
+//   document.getElementById("InputBase");
+//   const valueBase = InputBase.value;
+  
+  
+//   const calcularPerimetroTriangulo = perimetroTriangulo(valueLado1, valueLado2, valueBase );
+//   alert(calcularPerimetroTriangulo);
+// }
+// function calcularAreaTriangulo() {
+//   document.getElementById("InputLado1");
+//   const valueLado1 = InputLado1.value;
+//   document.getElementById("InputLado2");
+//   const valueLado2 = InputLado2 .value;
+//   document.getElementById("InputBase");
+//   const valueBase = InputBase.value;
+//   document.getElementById("InputAltura");
+//   const valueAltura = InputBase.value;
+  
+  
+//   const calcularAreaTriangulo = areaTriangulo(valueBase, valueAltura );
+//   alert(calcularAreaTriangulo);
+// }

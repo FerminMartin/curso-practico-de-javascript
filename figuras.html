@@ -7,9 +7,59 @@
   <title>Figuras geométricas | Curso Práctico de JavaScript</title>
 </head>
 <body>
-  <h1>
-    Figuras geométricas
-  </h1>
+  <header>
+    <h1>
+      Figuras geométricas
+    </h1>
+    <p>Este es el primer taller del curso práctico de JavaScript</p>
+    <section>
+      <h2>Calcula el área y perímetro de un cuadrado</h2>
+      <form action="">
+        <label for="InputCuadrado">
+          Escribe cuánto mide cada lado de tu cuadrado
+        </label>
+        <input id="InputCuadrado" type="number"/>
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular el área
+        </button>
+        </form>
+      </form>
+    </section>
+    <!-- <section> 
+      <h2>Calcula el área y perímetro de un triángulo</h2>
+      <form action="">
+        <label for="InputLado1">
+          Escribe cuánto mide el primer lado de tu triángulo
+        </label>
+        <input id="InputLado1" type="number"/><br>
+
+        <label for="InputLado2">
+          Escribe cuánto mide el segundo lado de tu triángulo
+        </label>
+        <input id="InputLado2" type="number"/><br>
+        
+        <label for="base">
+          Escribe cuánto mide la base de tu triángulo
+        </label>
+        <input id="InputBase" type="number"/><br>
+
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          Calcular el perímetro
+        </button><br>
+        <label for="base">
+          Escribe cuánto mide la altura de tu triángulo
+        </label>
+        <input id="InputAltura" type="number"/><br>
+        <button type="button" onclick="calcularAreaTriangulo()">
+          Calcular el área
+        </button>
+        </form>
+      </form>
+    </section> -->
+  </header>
 
   <script src="./figuras.js"></script>
 </body>
