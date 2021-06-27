@@ -119,38 +119,71 @@
 
 // Círculo en html
  // Diámetro 
- function diametroCirculo(radio) {
-  return radio * 2; 
+//  function diametroCirculo(radio) {
+//   return radio * 2; 
+// }
+
+//   // PI
+// const PI = Math.PI;
+
+
+// // Circunferencia
+// function perimetroCirculo(radio) {
+//   const diametro = diametroCirculo(radio);
+//   return diametro * PI;
+// }
+// // Área
+// function areaCirculo(radio) {
+//   return (radio * radio) * PI;
+// }
+
+// function calcularPerimetroCirculo() {
+//   const input =  document.getElementById("InputRadio");
+//   const valorRadio = input.value;
+
+//   const perimetro = perimetroCirculo(valorRadio);
+//   alert("El perímetro del círculos es: " + perimetro);
+//   }
+// function calcularAreaCirculo() {
+//   const input =  document.getElementById("InputRadio");
+//   const valorRadio = input.value;
+
+//   const area = areaCirculo(valorRadio);
+//   alert("El área del círculos es: " + area);
+
+// }
+
+//Ejercicio triangulo isosceles
+// La Función debe :
+// Recibir como parámetros los tres lados del triángulo
+// Validar que la longitud de los 3 lados corresponden a un tri isosceles
+// retornar la altura del triangulo
+
+// Bases:
+// El triangulo isosceles tiene dos lados iguales 
+// Parametros: ladoIgual, ladoDiferente 
+// Retorna la altura
+// Formula para calcular la altura (o hipotenusa) de un triangulo isosceles 
+// raiz cuadrada de ladoIgual al cuadrado menos la mitad del lado diferente al cuadrado
+
+
+console.group("Reto: Calcular hipotenusa")
+// PASO1: La Función debe recibir como parámetros los tres lados del triángulo 
+
+function alturaTriangulo(ladoA, ladoB, ladoBase) {
+  //...
 }
 
-  // PI
-const PI = Math.PI;
+// PASO2: La función debe validar que los 3 lados del triángulo corresponden a un triángulo isósceles
 
-
-// Circunferencia
-function perimetroCirculo(radio) {
-  const diametro = diametroCirculo(radio);
-  return diametro * PI;
-}
-// Área
-function areaCirculo(radio) {
-  return (radio * radio) * PI;
-}
-
-function calcularPerimetroCirculo() {
-  const input =  document.getElementById("InputRadio");
-  const valorRadio = input.value;
-
-  const perimetro = perimetroCirculo(valorRadio);
-  alert("El perímetro del círculos es: " + perimetro);
+function alturaTriangulo(ladoA, ladoB, ladoBase) {
+  if (ladoA != ladoB) {
+    console.error("los lados y a b no son iguals");
+  } else {
+    // ...
   }
-function calcularAreaCirculo() {
-  const input =  document.getElementById("InputRadio");
-  const valorRadio = input.value;
-
-  const area = areaCirculo(valorRadio);
-  alert("El área del círculos es: " + area);
-
 }
 
+// PASO3: La función debe retornar la altura del triángulo 
 
+console.groupEnd()
