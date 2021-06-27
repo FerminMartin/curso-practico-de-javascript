@@ -28,7 +28,7 @@
         </form>
       </form>
     </section>
-    <!-- <section> 
+    <section> 
       <h2>Calcula el área y perímetro de un triángulo</h2>
       <form action="">
         <label for="InputLado1">
@@ -58,7 +58,21 @@
         </button>
         </form>
       </form>
-    </section> -->
+    </section>
+    <section>
+      <h2>Calcula el área y perímetro de un círculo</h2>
+      <form action="">
+        <label for="InputRadio">Escribe un radio para la circunferencia</label>
+        <input id="InputRadio" type="number" />
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+        Calcular área
+        </button>
+      </form>
+    </section>
+    
   </header>
 
   <script src="./figuras.js"></script>
