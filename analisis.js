@@ -1,22 +1,6 @@
-const salariosCol = colombia.map(
-  function (personita) {
-    return personita.salary;
-  }
-);
-
-const salariosColSorted = salariosCol.sort(
-  function(salaryA, salaryB) {
-    return salaryA - salaryB;
-  }
-);
-
+// Helpers (ó Utils)
 function esPar(numerito) {
-  // if(numerito % 2 === 0) {
-  //   return true;
-  // } else {
-  //   return false;
-  // } 
-  return (numerito % 2 === 0); // Es la forma abreviada de ver si es par o no
+  return (numerito % 2 === 0);
 }
 
 function calcularMediaAritmetica(lista) {
@@ -30,22 +14,54 @@ function calcularMediaAritmetica(lista) {
   }
 
 
+// Calculadora de medianas
 function medianaSalarios(lista) {
-  const mitad = parseInt(lista.length / 2); // ParseInt es para quitarle los decimales
+  const mitad = parseInt(lista.length / 2); 
 
-  if (esPar(lista.length)) {                  // Segundo calculamos la mediana si es par
+  if (esPar(lista.length)) {                
     const personitaMitad1 = lista[mitad - 1]; 
     const personitaMitad2 = lista[mitad]; 
 
     const mediana = calcularMediaAritmetica([personitaMitad1, personitaMitad2]);
     return mediana
 
-  } else {                                    // Primero calculamos la mediana si es impar
+  } else {                                  
     const personitaMitad = lista[mitad]; 
     return personitaMitad;
   }
 }
 
-console.log(
-  medianaSalarios(salariosColSorted)
-)
+
+  // Mediana General
+const salariosCol = colombia.map(
+  function (personita) {
+    return personita.salary;
+  }
+);
+
+const salariosColSorted = salariosCol.sort(
+  function(salaryA, salaryB) {
+    return salaryA - salaryB;
+  }
+);
+
+const medianaGeneralCol = medianaSalarios(salariosColSorted)
+
+
+// Mediana del top 10%
+
+const spliceStart = (salariosColSorted.length * 90) / 100;
+const spliceCount = salariosColSorted.length - spliceStart;
+
+const salariosColTop10 = salariosColSorted.splice(
+  spliceStart,
+  spliceCount,
+);
+
+const medianaTop10Col = medianaSalarios(salariosColTop10)
+
+
+console.log({
+  medianaGeneralCol,
+  medianaTop10Col,
+})

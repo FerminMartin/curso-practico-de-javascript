@@ -1,13 +1,5 @@
 const colombia = [];
 colombia.push({
-  name: "Juanita",
-  salary: 1000,
-});
-colombia.push({
-  name: "Natalia",
-  salary: 1000,
-});
-colombia.push({
   name: "Camila",
   salary: 500,
 });
